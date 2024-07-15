@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.font-pop {
+    font-family: "Poppins", sans-serif;
+}
+
+header .top-head {
+    padding: 1rem 0;
+    box-shadow: 5px 0 20px rgb(211, 211, 211);
+}
+
+header .contact a,
+header .social-media a {
+    text-decoration: none;
+    color: #369585;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+header .main-head{
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 99;
+  }
+
+  .sticky.main-head hr{
+    display: none;
+  }
+
+  
+
+.hero-banner{
+    overflow: hidden;
+}
+
+.hero-banner-content{
+    background: linear-gradient(to right,#1DCCC2,#369585);
+    font-size: 8vmin;
+    line-height: 45px;
+    font-weight: 900;
+    padding: 30px 70px;
+    color: white;
+    letter-spacing: 1px;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    scale: 0.8;
+}
+
+.hero-banner.slick-current.slick-active .hero-banner-content{
+    transform: translateY(0px);
+    opacity: 1;
+    scale: 1;
+}
+
+
+.w-60{
+    width: 60%;
+}
+
+.banner-social-contact a{
+    text-decoration: none;
+    display: inline-block;
+    background: black;
+    padding: 0 4px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hero-banner.slick-current.slick-active .banner-social-contact a {
+    animation: dropeffect 2s forwards;
+}
+
+.banner-right-image-1{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 2s ease-in-out;
+}
+
+.banner-right-image-2{
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: all 2s ease-in-out;
+}
+
+.hero-banner.slick-current.slick-active .banner-right-image-1,
+.hero-banner.slick-active .banner-right-image-2 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+@keyframes dropeffect {
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 0;
+    }
+    80%{
+        scale: 1.3;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+
+
+.banner-slide-nav{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.banner-slide-nav img{
+    width: 15px;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.banner-slide-nav img:hover{
+    filter: grayscale(0);
+}
+
+.hero-banner-content span.one{
+    font-weight: 600;
+}
+.hero-banner-content span.two{
+    font-weight: 600;
+    font-size: 25px !important;
+}
+
+
+.mid-right p {
+    color: #369585;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.mid-right p i {
+    font-weight: lighter;
+    margin-right: 2px;
+}
+
+.mid-right p span {
+    color: gray;
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+
+.main-head .nav-link {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    color: #369585;
+}
+
+.search-btn i {
+    color: #369585;
+    font-weight: 800;
+}
+
+.join-us {
+    white-space: nowrap;
+    background: #369585;
+    color: white;
+    margin-left: 20px;
+}
+
+.join-us:hover {
+    background: #000000;
+    color: white;
+}
+
+.search-and-join-us input::placeholder {
+    color: rgb(201, 196, 196);
+}
+
+.main-head hr {
+    color: #369585;
+}
+
+.our-store-wrapper .subhead h2,
+.brands .subhead h2,
+.gallery .subhead h2,
+.our-director .subhead h2,
+.happy-customers .subhead h2,
+.our-services .subhead h2 {
+    color: #369585;
+    font-size: 7vmin;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+.our-store-wrapper .subhead h2::before {
+    content: "OUR STORE";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+    font-family: "Poppins", sans-serif;
+}
+
+.our-store-wrapper .subhead h2::after,
+.brands .subhead h2::after,
+.gallery .subhead h2::after,
+.our-director .subhead h2::after,
+.happy-customers .subhead h2::after,
+.our-services .subhead h2::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #369585;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.our-services .lva-desc {
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+.ser-wrap{
+    background: #353742;
+}
+
+.lva-wrap{
+    background: linear-gradient(to bottom, #353742 21%, white 10%);
+}
+
+.lva-ser-wrap{
+    background: linear-gradient(to bottom, white 50%, #dad9d9 10%);
+}
+
+.lva-name::after {
+    content: "";
+    background-color: #1DCCC2;
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.lva-card {
+    box-shadow: 0 0 10px #A2A2A2;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.lva-card:hover,
+.click-for-all:hover {
+    scale: 1.1;
+}
+
+.lva-card span {
+    font-size: 80px;
+    font-weight: 900;
+    color: #F1F2F4;
+    position: absolute;
+    bottom: -35px;
+    right: -6px;
+}
+
+.lva-card a {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #A2A2A2;
+    padding: 2px 8px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.lva-head {
+    color: #1DCCC2;
+    font-weight: 900;
+}
+
+.lva-short-desc {
+    font-weight: 700;
+}
+
+
+.click-for-all a {
+    color: #369585;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #A2A2A2;
+    font-weight: 500;
+}
+
+.click-for-all a span {
+    padding: 0 10px;
+    border-right: 1px solid #1DCCC2;
+}
+
+.lva-ser-card {
+    position: relative;
+    box-shadow: 10px 20px 20px rgba(128, 128, 128, 0.773);
+    border-radius: 30px;
+    padding: 50px 30px;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background: white;
+}
+
+.lva-ser-card:hover{
+    scale: 0.9;
+}
+
+.lva-ser-card::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: rotate(45deg);
+    box-shadow: 18px 14px 10px #a5a3a38a;
+}
+
+.down-quote {
+    position: absolute;
+    width: 60px;
+    top: -15px;
+    right: 25px;
+}
+
+.lva-ser-card a {
+    background-color: #1DCCC2;
+    font-size: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+}
+
+.lva-ser-card .lva-ser-name {
+    color: #2B2D36;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.lva-ser-card .lva-ser-desc {
+    font-size: 10px;
+}
+
+.lva-ser-name::after {
+    content: "";
+    background-color: #1DCCC2;
+    display: block;
+    height: 2px;
+    width: 100px;
+    margin-top: 5px;
+    margin: auto;
+}
+
+
+
+.our-services .subhead h2::before {
+    content: "OUR SERVICES";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+    font-family: "Poppins", sans-serif;
+}
+
+.happy-customers .subhead h2::before {
+    content: "HAPPY CUSTOMERS";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+    font-family: "Poppins", sans-serif;
+}
+
+.happy-customer-card {
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}
+
+.slick-current-item {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.hc-left {
+    background: #369585;
+    padding: 20px;
+}
+
+.our-director .subhead h2::before {
+    content: "OUR DIRECTOR";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+    font-family: "Poppins", sans-serif;
+}
+
+.our-director {
+    background: url(../images/director\ bg.png) no-repeat bottom/cover;
+    background-position-x: -20px;
+}
+
+.director-card {
+    border: 1px solid #1DCCC2;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px gray;
+}
+
+.director-card:hover {
+    scale: 1.1;
+}
+
+.director-card p {
+    background: white;
+    color: #369585;
+    font-size: 5vmin;
+    text-align: center;
+    font-weight: 900;
+    line-height: 35px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.shooter-lens {
+    background: #353742;
+
+}
+
+.shooter-lens img {
+    object-fit: contain;
+}
+
+.shooter-lens-booking {
+    background: linear-gradient(#1dcc92a5, #1dcc8cbc), url(../images/high-angle-two-pairs-glasses-with-letters.jpg) no-repeat center/cover;
+}
+
+.shooter-lens-booking a {
+    color: #1DCCC2;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+.shooter-lens h2 {
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 600;
+    color: white;
+}
+
+.shooter-lens h2::after {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #1DCCC2;
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    top: 20px;
+}
+
+.shooter-lens h2::before {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #1DCCC2;
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.shooter-lens h3 {
+    text-align: center;
+    font-size: 15vmin;
+    font-weight: 600;
+    color: white;
+}
+
+.see-store {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 4px 5px 40px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, aqua, darkorchid) border-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.see-store:hover {
+    scale: 1.1;
+    background: #36958535;
+}
+
+.icon-store {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, aqua, darkorchid);
+}
+
+.gallery .subhead h2::before {
+    content: "GALLERY";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+    font-family: "Poppins", sans-serif;
+}
+
+.store-card {
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+
+
+.store-card:hover {
+    scale: 0.9;
+}
+
+.store-content {
+    border: 1px solid #1DCCC2;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.store-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.store-card p {
+    background: white;
+    color: #369585;
+    font-size: 5vmin;
+    text-align: center;
+    font-weight: 900;
+    line-height: 35px;
+    padding: 20px 0 0 0;
+}
+
+.store-card small {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.store-slider-wrap {
+    background: linear-gradient(to bottom, white 60%, #efefef 40%);
+}
+
+.store-slider-wrap .slick-dots {
+    bottom: 5px;
+}
+
+.store-slider-wrap .slick-dots li ,
+.hero-banner-slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #1DCCC2;
+    border-radius: 50%;
+}
+
+.store-slider-wrap .slick-dots li button:before ,
+.hero-banner-slider .slick-dots li button:before {
+    display: none;
+}
+
+.store-slider-wrap li.slick-active ,
+.hero-banner-slider li.slick-active {
+    background-color: #369585 !important;
+}
+
+.store-slide-nav #prev {
+    position: absolute;
+    top: 40%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 15px;
+    cursor: pointer;
+}
+
+.store-slide-nav #next {
+    position: absolute;
+    top: 40%;
+    right: 80px;
+    transform: translateY(-50%);
+    width: 15px;
+    cursor: pointer;
+}
+
+.see-all-store {
+    color: #369585;
+    font-weight: 500;
+}
+
+.more-about-eyespace ul li {
+    color: #369585;
+    background-color: #369585;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.more-about-eyespace ul li {
+    color: #369585;
+    background-color: #369585;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.more-about-eyespace ul li:hover {
+    scale: 1.05;
+}
+
+.franchise-corporate-wrap {
+    background: linear-gradient(to bottom, white 60%, #efefef 40%);
+    padding: 50px 0;
+}
+
+.franchise-card,
+.corporate-card {
+    background-color: #369585;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.franchise-card:hover,
+.corporate-card:hover {
+    scale: 0.9;
+}
+
+.franchise-card:hover .contact,
+.corporate-card:hover .contact {
+    bottom: -60px;
+}
+
+.franchise-card p,
+.corporate-card p {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    font-size: 6vmin;
+    color: #369585;
+    padding: 40px 30px;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 0 0 10px 10px;
+    line-height: 40px;
+}
+
+.franchise-card a,
+.corporate-card a {
+    display: inline-block;
+    background: linear-gradient(#369585, #353742);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+.franchise-card a span,
+.corporate-card a span {
+    color: green;
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.more-about-eyespace .line {
+    height: 100%;
+    width: 3px;
+    background-color: #369585;
+    position: relative;
+}
+
+.more-about-eyespace .line::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #369585;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 4%;
+    transform: translateX(-40%);
+}
+
+.more-about-eyespace .line::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #369585;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 4%;
+    transform: translateX(-40%);
+}
+
+.more-about-eyespace ul li span {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.optical-store {
+    background: linear-gradient(#1dccc39d, #1dccc3bd), url(../images/optical-store.jpeg);
+    height: 100%;
+    border-radius: 50px;
+    padding: 30px;
+    display: grid;
+    align-content: center;
+}
+
+.brands .subhead h2::before {
+    content: "BRANDS";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+}
+
+.brands-slider {
+    background: #3695855c;
+    padding: 20px 10px;
+    border: 1px solid #369585;
+    border-radius: 30px;
+    margin: 80px 0;
+}
+
+.brands-slider img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+
+
+.newsletter {
+    background: #2B2D36;
+}
+
+.book-appoinment {
+    background: #353742;
+    padding: 4px;
+    border-radius: 30px;
+}
+
+.book-appoinment input {
+    background: none;
+    border: none;
+    color: white !important;
+}
+
+.book-appoinment input::placeholder {
+    color: #A2A2A2;
+}
+
+.book-appoinment input:focus {
+    background: none;
+    box-shadow: none;
+}
+
+.socials a {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    background-color: #353742;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    background: url(../images/footer\ bg.jpg) no-repeat center/cover;
+}
+
+.btn-appoinment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 45px;
+    background: #1DCCC2;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.btn-appoinment:hover {
+    scale: 1.2;
+}
+
+
+.footer-book-appoinment input::placeholder {
+    color: #1DCCC2;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navigation a {
+    display: block;
+    color: #A2A2A2;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+address a {
+    color: #A2A2A2;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+address a i {
+    color: #1DCCC2;
+}

@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eye Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendors/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="top-head">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="contact">
+                    <a href="#" class="phone"><i class="fa-solid fa-phone-volume me-1"></i>9073939914</a>
+                    <a href="#" class="email"><i class="fa-regular fa-envelope-open me-1"></i>eyespace20@gmail.com</a>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="middle-head ">
+            <div class="container py-3 d-flex align-items-center justify-content-between">
+                <a href="index.html"><img src="./images/Capture.PNG" alt="logo" class="img-fluid"></a>
+                <div class="mid-right d-flex align-items-center gap-5">
+                    <p><i class="ri-checkbox-circle-line"></i>Trusted By <br><span>1200+ People</span></p>
+                    <p><i class="ri-checkbox-circle-line"></i>Best Hospital <br><span>In News Paper</span></p>
+                    <p><i class="ri-checkbox-circle-line"></i>Number #1 <br><span>In Kolkata</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-head" id="main-head">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Service 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Service 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Service 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Doctors</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Optical Store
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Store 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Store 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Store 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                        </ul>
+                        <div class="search-and-join-us d-flex align-items-center">
+                            <form class="input-group shadow" role="search">
+                                <input class="form-control border-0" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn bg-white border-0 btn-outline-light search-btn" type="submit"><i
+                                        class="ri-search-line"></i></button>
+                            </form>
+                            <button class="btn join-us rounded-5 px-4" type="submit">JOIN US</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <hr class="w-75 mx-auto">
+        </div>
+    </header>
+    <!-- HEADER -->
+    <!-- MAIN content -->
+    <main>
+        <section class="hero-section-wrapper mb-5 position-relative">
+            <div class="hero-banner-slider wow bounceInUp">
+                <div class="hero-banner position-relative">
+                    <img src="./images/banner.png" alt="bg-hero" class="bg-hero img-fluid">
+                    <div class="row position-absolute z-3 top-0 w-100 align-items-center">
+                        <div class="col-md-6">
+                            <div class="hero-banner-left ">
+                                <img src="./images/B-BLACK-01.png" alt="logo" width="300" class="py-2 px-5">
+                                <p class="hero-banner-content mt-5">
+                                    WE TAKE CARE <br>
+                                    <span class="one">OF YOUR EYES</span> <br>
+                                    <span class="two">DIAGNOSTIC SOLUTIONS</span>
+                                </p>
+                                <div class="banner-social-contact mt-5 d-flex gap-2 align-items-center">
+                                    <p class="fw-bold me-2 mb-0 ps-5">FOLLOW US ON</p>
+                                    <a href="#" class="icon icon-1" tabindex="0"><i class="ri-instagram-line"></i></a>
+                                    <a href="#" class="icon icon-2" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                    <a href="#" class="icon icon-3" tabindex="0"><i class="ri-twitter-x-fill"></i></a>
+                                    <a href="#" class="icon icon-4" tabindex="0"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-end px-0 pt-5">
+                            <img src="./images/banner-right-1.png" alt="banner-right-image"
+                                class="d-inline-block w-60 mb-3 banner-right-image-1">
+                            <img src="./images/banner-right-2.png" alt="banner-right-image"
+                                class="d-inline w-75 banner-right-image-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-banner position-relative">
+                    <img src="./images/banner.png" alt="bg-hero" class="bg-hero img-fluid">
+                    <div class="row position-absolute z-3 top-0 w-100 align-items-center">
+                        <div class="col-md-6">
+                            <div class="hero-banner-left ">
+                                <img src="./images/B-BLACK-01.png" alt="logo" width="300" class="py-2 px-5">
+                                <p class="hero-banner-content mt-5">
+                                    WE TAKE CARE <br>
+                                    <span class="one">OF YOUR EYES</span> <br>
+                                    <span class="two">DIAGNOSTIC SOLUTIONS</span>
+                                </p>
+                                <div class="banner-social-contact mt-5 d-flex gap-2 align-items-center">
+                                    <p class="fw-bold me-2 mb-0 ps-5">FOLLOW US ON</p>
+                                    <a href="#" class="icon icon-1" tabindex="0"><i class="ri-instagram-line"></i></a>
+                                    <a href="#" class="icon icon-2" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                    <a href="#" class="icon icon-3" tabindex="0"><i class="ri-twitter-x-fill"></i></a>
+                                    <a href="#" class="icon icon-4" tabindex="0"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-end px-0 pt-5">
+                            <img src="./images/banner-right-1.png" alt="banner-right-image"
+                                class="d-inline-block w-60 mb-3 banner-right-image-1">
+                            <img src="./images/banner-right-2.png" alt="banner-right-image"
+                                class="d-inline w-75 banner-right-image-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-banner position-relative">
+                    <img src="./images/banner.png" alt="bg-hero" class="bg-hero img-fluid">
+                    <div class="row position-absolute z-3 top-0 w-100 align-items-center">
+                        <div class="col-md-6">
+                            <div class="hero-banner-left ">
+                                <img src="./images/B-BLACK-01.png" alt="logo" width="300" class="py-2 px-5">
+                                <p class="hero-banner-content mt-5">
+                                    WE TAKE CARE <br>
+                                    <span class="one">OF YOUR EYES</span> <br>
+                                    <span class="two">DIAGNOSTIC SOLUTIONS</span>
+                                </p>
+                                <div class="banner-social-contact mt-5 d-flex gap-2 align-items-center">
+                                    <p class="fw-bold me-2 mb-0 ps-5">FOLLOW US ON</p>
+                                    <a href="#" class="icon icon-1" tabindex="0"><i class="ri-instagram-line"></i></a>
+                                    <a href="#" class="icon icon-2" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                    <a href="#" class="icon icon-3" tabindex="0"><i class="ri-twitter-x-fill"></i></a>
+                                    <a href="#" class="icon icon-4" tabindex="0"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-end px-0 pt-5">
+                            <img src="./images/banner-right-1.png" alt="banner-right-image"
+                                class="d-inline-block w-60 mb-3 banner-right-image-1">
+                            <img src="./images/banner-right-2.png" alt="banner-right-image"
+                                class="d-inline w-75 banner-right-image-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-banner position-relative">
+                    <img src="./images/banner.png" alt="bg-hero" class="bg-hero img-fluid">
+                    <div class="row position-absolute z-3 top-0 w-100 align-items-center">
+                        <div class="col-md-6">
+                            <div class="hero-banner-left ">
+                                <img src="./images/B-BLACK-01.png" alt="logo" width="300" class="py-2 px-5">
+                                <p class="hero-banner-content mt-5">
+                                    WE TAKE CARE <br>
+                                    <span class="one">OF YOUR EYES</span> <br>
+                                    <span class="two">DIAGNOSTIC SOLUTIONS</span>
+                                </p>
+                                <div class="banner-social-contact mt-5 d-flex gap-2 align-items-center">
+                                    <p class="fw-bold me-2 mb-0 ps-5">FOLLOW US ON</p>
+                                    <a href="#" class="icon icon-1" tabindex="0"><i class="ri-instagram-line"></i></a>
+                                    <a href="#" class="icon icon-2" tabindex="0"><i class="ri-facebook-fill"></i></a>
+                                    <a href="#" class="icon icon-3" tabindex="0"><i class="ri-twitter-x-fill"></i></a>
+                                    <a href="#" class="icon icon-4" tabindex="0"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-end px-0 pt-5">
+                            <img src="./images/banner-right-1.png" alt="banner-right-image"
+                                class="d-inline-block w-60 mb-3 banner-right-image-1">
+                            <img src="./images/banner-right-2.png" alt="banner-right-image"
+                                class="d-inline w-75 banner-right-image-2">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="banner-slide-nav">
+                <img src="./images/prev.png" alt="prev-nav" id="prev">
+                <img src="./images/next.png" alt="next-nav" id="next">
+            </div>
+        </section>
+        <section class="our-store-wrapper">
+            <div class="subhead container position-relative d-flex justify-content-between align-items-center">
+                <h2>OUR STORE</h2>
+                <a href="#" class="see-store rounded-5 d-flex align-items-center"><span>See All Store</span> <span
+                        class="icon-store ms-2"><i class="ri-play-mini-fill"></i></span></a>
+            </div>
+        </section>
+        <section class="optical-solution">
+
+        </section>
+        <section class="trending-products">
+
+        </section>
+        <section class="our-services">
+            <div class="subhead container position-relative py-5">
+                <h2>OUR SERVICES</h2>
+            </div>
+            <div class="ser-wrap py-5">
+                <h2 class="text-center lva-head">LVA - Low Vision Aids</h2>
+                <p class="w-50 m-auto text-center lva-short-desc">Only LVA Center in North and Central Kolkata All
+                    Optical +
+                    Non optical
+                    LVA Devices Avaliable
+                    Useful for Patient with Low Vision</p>
+            </div>
+
+            <div class="lva-wrap">
+
+                <div class="row container m-auto">
+                    <div class="col-md-3">
+                        <div class="lva-card position-relative wow bounceInUp" data-wow-duration="2s">
+                            <img src="./images/lv-1.jpg" alt="lva" class="img-fluid">
+                            <div class="p-3 bg-white">
+                                <p class="lva-name lva-name fs-6 fw-bold">Specialised Eye Clinic</p>
+                                <p class="lva-desc">Specialised Eye Clinic - We provide comprehensive
+                                    eye care services for all ages with state-of-the-art
+                                    equipment, experienced ophthalmologists and
+                                    optometrists are devoted to providing personalized
+                                    care with a compassionate approach.</p>
+                                <span class="d-block">01</span>
+                                <a href="#"><img src="./images/blue-arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="lva-card position-relative">
+                            <img src="./images/lv-2.jpg" alt="lva" class="img-fluid">
+                            <div class="p-3 bg-white">
+                                <p class="lva-name lva-name fs-6 fw-bold">Home Eye Test</p>
+                                <p class="lva-desc">Home Eye Test - Professional Eye Testing at the ease
+                                    of your home. Our team of Optometrist and Dispenser arrive at your home at the
+                                    confirmed date and
+                                    time of your choice.</p>
+                                <span class="d-block">02</span>
+                                <a href="#"><img src="./images/blue-arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="lva-card position-relative">
+                            <img src="./images/lv-3.jpg" alt="lva" class="img-fluid">
+                            <div class="p-3 bg-white">
+                                <p class="lva-name lva-name fs-6 fw-bold">Optical Service</p>
+                                <p class="lva-desc">Optical Service - Revolutionize your eyewear experience with a
+                                    diverse frame & lens selection with the
+                                    guid- ance of our skilled dispenser.</p>
+                                <span class="d-block">03</span>
+                                <a href="#"><img src="./images/blue-arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="lva-card position-relative">
+                            <img src="./images/lv-4.jpg" alt="lva" class="img-fluid">
+                            <div class="p-3">
+                                <p class="lva-name lva-name fs-6 fw-bold">Eye Clinic Services</p>
+                                <p class="lva-desc">
+                                    Know More.</p>
+                                <span class="d-block">04</span>
+                                <a href="#"><img src="./images/blue-arrow.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="click-for-all text-center mt-5">
+                    <a href="#"><span>CLICK FOR ALL</span><i class="ri-add-line ms-2"></i></a>
+                </div>
+                <div class="lva-ser-wrap">
+                    <div class="row py-5 container m-auto">
+                        <div class="col-md-4">
+                            <div class="lva-ser-card">
+                                <img src="./images/down-quote.png" alt="down-quote" class="down-quote">
+                                <p class="lva-ser-name">Contact Lens</p>
+                                <p class="lva-ser-desc">
+                                    We have Specialised contact lens clinic and experienced
+                                    contact lens specialist for dispensing Soft Contact Lenses,
+                                    RGP Lens, Extended Wear Contact Lenses and Cosmetic
+                                    Contact Lens.
+                                </p>
+                                <a href="#">ABOUT MORE</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="lva-ser-card">
+                                <img src="./images/down-quote.png" alt="down-quote" class="down-quote">
+                                <p class="lva-ser-name">Shooter Glass</p>
+                                <p class="lva-ser-desc">
+                                    Eye Space provides special lenses for Shooters. This special
+                                    lens has been tirelessly dedicated to crafting precision
+                                    optics of uncompromising clarity, quality and reliability.
+                                </p>
+                                <a href="#">ABOUT MORE</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="lva-ser-card">
+                                <img src="./images/down-quote.png" alt="down-quote" class="down-quote">
+                                <p class="lva-ser-name">Vision Therapy</p>
+                                <p class="lva-ser-desc">
+                                    Vision therapy is a specialist supervised program designed
+                                    to correct many common visual disorders and/or improve
+                                    visual skills. It is typically used to improve focus and range
+                                    of focus, depth perception, and the ability for the eyes and
+                                    brain to work together
+                                </p>
+                                <a href="#">ABOUT MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="happy-customers">
+            <div class="subhead container position-relative py-5">
+                <h2>HAPPY CUSTOMERS</h2>
+            </div>
+            <div class="happy-customers-slider container">
+                <div class="happy-customer-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hc-left">
+                                <img src="./images/hc-1.jpg" alt="happy-client" class="img-fluid">
+                                <p>ADITI SHARMA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hc-right">
+                                <img src="./images/quote.png" alt="quote">
+                                <p>"I've never experienced
+                                    such amazing customer
+                                    service! They really go
+                                    above and beyond."</p>
+                                <p class="name-location">
+                                    ADITI SHARMA
+                                </p>
+                                <small><i class="ri-map-pin-line"></i>Mohor Appartment Bolpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happy-customer-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hc-left">
+                                <img src="./images/hc-1.jpg" alt="happy-client" class="img-fluid">
+                                <p>ADITI SHARMA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hc-right">
+                                <img src="./images/quote.png" alt="quote">
+                                <p>"I've never experienced
+                                    such amazing customer
+                                    service! They really go
+                                    above and beyond."</p>
+                                <p class="name-location">
+                                    ADITI SHARMA
+                                </p>
+                                <small><i class="ri-map-pin-line"></i>Mohor Appartment Bolpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happy-customer-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hc-left">
+                                <img src="./images/hc-1.jpg" alt="happy-client" class="img-fluid">
+                                <p>ADITI SHARMA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hc-right">
+                                <img src="./images/quote.png" alt="quote">
+                                <p>"I've never experienced
+                                    such amazing customer
+                                    service! They really go
+                                    above and beyond."</p>
+                                <p class="name-location">
+                                    ADITI SHARMA
+                                </p>
+                                <small><i class="ri-map-pin-line"></i>Mohor Appartment Bolpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happy-customer-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hc-left">
+                                <img src="./images/hc-1.jpg" alt="happy-client" class="img-fluid">
+                                <p>ADITI SHARMA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hc-right">
+                                <img src="./images/quote.png" alt="quote">
+                                <p>"I've never experienced
+                                    such amazing customer
+                                    service! They really go
+                                    above and beyond."</p>
+                                <p class="name-location">
+                                    ADITI SHARMA
+                                </p>
+                                <small><i class="ri-map-pin-line"></i>Mohor Appartment Bolpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happy-customer-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hc-left">
+                                <img src="./images/hc-1.jpg" alt="happy-client" class="img-fluid">
+                                <p>ADITI SHARMA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hc-right">
+                                <img src="./images/quote.png" alt="quote">
+                                <p>"I've never experienced
+                                    such amazing customer
+                                    service! They really go
+                                    above and beyond."</p>
+                                <p class="name-location">
+                                    ADITI SHARMA
+                                </p>
+                                <small><i class="ri-map-pin-line"></i>Mohor Appartment Bolpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happy-customer-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hc-left">
+                                <img src="./images/hc-1.jpg" alt="happy-client" class="img-fluid">
+                                <p>ADITI SHARMA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hc-right">
+                                <img src="./images/quote.png" alt="quote">
+                                <p>"I've never experienced
+                                    such amazing customer
+                                    service! They really go
+                                    above and beyond."</p>
+                                <p class="name-location">
+                                    ADITI SHARMA
+                                </p>
+                                <small><i class="ri-map-pin-line"></i>Mohor Appartment Bolpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-director">
+            <div class="subhead container position-relative py-5">
+                <h2>OUR DIRECTOR</h2>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center py-5 gap-2">
+                    <div class="col-md-3">
+                        <div class="director-card">
+                            <img src="./images/director-2.jpg" alt="director-image" class="img-fluid">
+                            <p>Anindita
+                                Biswas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="director-card">
+                            <img src="./images/director-1.jpg" alt="director-image" class="img-fluid">
+                            <p>Rupak Kanti
+                                Biswas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="appoinment">
+            <div class="shooter-lens">
+                <div class="row">
+                    <div class="col-md-8 p-5">
+                        <h2>We also Provide</h2>
+                        <h3>ShooterLens</h3>
+                    </div>
+                    <div class="col-md-4 pe-5">
+                        <img src="./images/Shooting_glasses_for_sport_shooting.jpg" alt="shooter-lens"
+                            class="h-100 w-100 bg-white">
+                    </div>
+                </div>
+                <div class="shooter-lens-booking">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="fs-1 w-75 fw-bold text-white px-5 py-2 text-center m-auto">Are you looking for a
+                                eye
+                                care consultation?</p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <a href="#" class="text-decoration-none">
+                                <div
+                                    class="rounded-5 p-1 bg-white text-decoration-none d-flex align-items-center justify-content-center ps-5  gap-2">
+                                    <span class="rounded-4 border-0 pe-5">BOOK APOINMENT</span>
+                                    <div class="btn-appoinment"><img src="./images/arrowright.png" alt="arrow"
+                                            class="w-100 h-100"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="subhead container position-relative py-5">
+                <h2>GALLERY</h2>
+            </div>
+            <a href="#" class="d-block container"><span class="see-all-store font-pop float-end">See All Store <i
+                        class="ri-arrow-right-line"></i></span></a>
+            <div class="store-slider-wrap position-relative">
+                <div class="store-slide-nav">
+                    <img src="./images/prev.png" alt="prev-nav" id="prev">
+                    <img src="./images/next.png" alt="next-nav" id="next">
+                </div>
+                <div class="store-slider container  mt-5 pb-5">
+                    <div class="store-card ">
+                        <div class="store-content  shadow">
+                            <img src="./images/os-1.jpeg" alt="optical-store">
+                            <p>Eye Space <br>
+                                (Asansol)</p>
+                            <small class="text-center">9476377505</small>
+                        </div>
+                    </div>
+                    <div class="store-card ">
+                        <div class="store-content shadow">
+                            <img src="./images/os-2.jpeg" alt="optical-store">
+                            <p>Eye Space <br>
+                                ( Head Office )</p>
+                            <small class="text-center">9836443704</small>
+                        </div>
+                    </div>
+                    <div class="store-card ">
+                        <div class="store-content shadow">
+                            <img src="./images/os-3.jpeg" alt="optical-store">
+                            <p>Eye Space <br>
+                                (Bolpur)</p>
+                            <small class="text-center">9475305040</small>
+                        </div>
+
+                    </div>
+                    <div class="store-card">
+                        <div class="store-content  shadow">
+                            <img src="./images/os-1.jpeg" alt="optical-store">
+                            <p>Eye Space <br>
+                                (Asansol)</p>
+                            <small class="text-center">9476377505</small>
+                        </div>
+                    </div>
+                    <div class="store-card ">
+                        <div class="store-content shadow">
+                            <img src="./images/os-2.jpeg" alt="optical-store">
+                            <p>Eye Space <br>
+                                ( Head Office )</p>
+                            <small class="text-center">9836443704</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more-about-eyespace position-relative">
+            <div class="row container mx-auto my-5 font-pop">
+                <div class="col-md-6 d-flex align-items-center gap-1">
+                    <div class="line"></div>
+                    <ul class="py-5">
+                        <li><span>ONLY LVA CLINIC IN NORTH & CENTRAL KOLKATA</span></li>
+                        <li><span>PROFESSION BASED EYE GLASSES & LENSES</span></li>
+                        <li><span>CONTACT LENSES TRIAL</span></li>
+                        <li><span>COMPUTER VISION SYNDROME</span></li>
+                        <li><span>VISION THERAPY</span></li>
+                        <li><span>HOME REFRACTION</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="optical-store">
+                        <img src="./images/W-LOGO-01 - Copy.png" alt="logo" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="franchise-corporate-wrap">
+                <div class="row container mx-auto ">
+                    <div class="col-md-4">
+                        <div class="franchise-card shadow">
+                            <img src="./images/franchaise.png" alt="franchise-img" class="img-fluid">
+                            <p>BE OUR
+                                FRANCHISE</p>
+                            <a href="#" class="contact">CONTACT US <span><i class="ri-arrow-right-line"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images//globe.png" alt="globe" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="corporate-card shadow">
+                            <img src="./images/corporate tieup.png" alt="corporate-tieup" class="img-fluid">
+                            <p>CORPORATE
+                                TIE-UP</p>
+                            <a href="#" class="contact">CONTACT US <span><i class="ri-arrow-right-line"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="brands container my-5">
+            <div class="subhead container position-relative py-5">
+                <h2>BRANDS</h2>
+                <div class="brands-slider">
+                    <img src="./images/brands/eye-q-hospital-gurgaon-65337386a805e.png" alt="brand">
+                    <img src="./images/brands/fortis-hospitals-logo-A9EB82FFBA-seeklogo.com.png" alt="brand">
+                    <img src="./images/brands/Max_Healthcare_logo.svg.png" alt="brand">
+                    <img src="./images/brands/Oakley_logo.svg.png" alt="brand">
+                    <img src="./images/brands/png-transparent-tommy-hilfiger-brand-tommy-hilfiger-fashion-pvh-logo-clothing-tommy-hilfiger-logo-blue-angle-text.png"
+                        alt="brand">
+                    <img src="./images/brands/Ray-Ban-logo.png" alt="brand">
+                    <img src="./images/brands/Vogue-eyewear-Logo-Vector.svg-.png" alt="brand">
+                    <img src="./images/brands/1-01.png" alt="brand">
+                    <img src="./images/brands/2-01.png" alt="brand">
+                    <img src="./images/brands/3-01.png" alt="brand">
+                    <img src="./images/brands/4-01.png" alt="brand">
+                    <img src="./images/brands/5-01.png" alt="brand">
+                    <img src="./images/brands/6-01.png" alt="brand">
+                    <img src="./images/brands/7-01.png" alt="brand">
+                    <img src="./images/brands/8-01.png" alt="brand">
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="newsletter font-mont">
+            <div class="row container m-auto py-4 align-items-center justify-content-between">
+                <div class="col-md-4">
+                    <div class="socials d-flex align-items-center gap-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center gap-3 justify-content-end">
+                    <span class="fw-bold text-white fs-5">Newsletter</span>
+                    <form action="#" class="d-flex align-items-center book-appoinment">
+                        <input type="text" class="form-control px-5 rounded-4" placeholder="Your email address">
+                        <button type="submit" class="btn-appoinment"><img src="./images/arrowright.png" alt="arrow"
+                                class="w-100 h-100"></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN content -->
+    <footer class="py-5">
+        <div class="row container m-auto py-4 justify-content-between ">
+            <div class="col-md-4">
+                <a href="#"><img src="./images/foot logo.png" alt="foot-logo"></a>
+                <p class="lead text-light my-3 font-mont">There are many variations of
+                    passages of lorem ipsum available,
+                    but the majority suffered.</p>
+                <form action="#" class="d-flex align-items-center footer-book-appoinment gap-2">
+                    <input type="text" class="form-control px-5 rounded-4" placeholder="BOOK APOINMENT">
+                    <button type="submit" class="btn-appoinment"><img src="./images/arrowright.png" alt="arrow"
+                            class="w-100 h-100"></button>
+                </form>
+            </div>
+            <div class="col-md-2 navigation mt-3 font-mont">
+                <h6 class="fw-bold mb-5 fs-4 text-white">Navigation</h6>
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Store</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col-md-5 mt-3 font-mont">
+                <h6 class="fw-bold mb-5 fs-4 text-white">Contact</h6>
+                <address>
+                    <a href="#"><i class="ri-map-pin-line me-2"></i>24 Post Office Road Kolkata - 700028</a>
+                    <a href="#"><i class="fa-regular fa-envelope-open me-2"></i>eyespace20@gmail.com</a>
+                    <a href="#"><i class="fa-solid fa-phone-volume me-2"></i>9073939914</a>
+                </address>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./vendors/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap-custom.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
