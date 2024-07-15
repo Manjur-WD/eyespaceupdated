@@ -223,20 +223,20 @@ header .main-head {}
 
 .location-1 {
     position: absolute;
-    top: 25%;
+    top: 23%;
     left: 37%;
     transform: translate(-50%, -50%);
 }
 
 .location-2 {
     position: absolute;
-    top: 20%;
+    top: 18%;
     right: 25%;
     transform: translate(-50%, -50%);
 }
 .location-3 {
     position: absolute;
-    top: 65%;
+    top: 63%;
     left: 22%;
     transform: translate(-50%, -50%);
     width: 15% !important;
@@ -258,7 +258,7 @@ header .main-head {}
 
 .location-6 {
     position: absolute;
-    top: 40%;
+    top: 36%;
     right: 7%;
     transform: translate(-50%, -50%);
     width: 15% !important;
