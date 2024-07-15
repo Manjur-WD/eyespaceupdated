@@ -24,33 +24,31 @@ header .social-media a {
     font-size: 0.8rem;
 }
 
-header .main-head{
+header .main-head {}
 
-}
-
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
     padding: 10px 0;
     z-index: 99;
-  }
+}
 
-  .sticky.main-head hr{
+.sticky.main-head hr {
     display: none;
-  }
+} */
 
-  
 
-.hero-banner{
+
+.hero-banner {
     overflow: hidden;
 }
 
-.hero-banner-content{
-    background: linear-gradient(to right,#1DCCC2,#369585);
+.hero-banner-content {
+    background: linear-gradient(to right, #1DCCC2, #369585);
     font-size: 8vmin;
-    line-height: 45px;
+    line-height: 55px;
     font-weight: 900;
     padding: 30px 70px;
     color: white;
@@ -62,18 +60,18 @@ header .main-head{
     scale: 0.8;
 }
 
-.hero-banner.slick-current.slick-active .hero-banner-content{
+.hero-banner.slick-current.slick-active .hero-banner-content {
     transform: translateY(0px);
     opacity: 1;
     scale: 1;
 }
 
 
-.w-60{
+.w-60 {
     width: 60%;
 }
 
-.banner-social-contact a{
+.banner-social-contact a {
     text-decoration: none;
     display: inline-block;
     background: black;
@@ -87,13 +85,13 @@ header .main-head{
     animation: dropeffect 2s forwards;
 }
 
-.banner-right-image-1{
+.banner-right-image-1 {
     opacity: 0;
     transform: translateY(200px);
     transition: all 2s ease-in-out;
 }
 
-.banner-right-image-2{
+.banner-right-image-2 {
     opacity: 0;
     transform: translateY(-200px);
     transition: all 2s ease-in-out;
@@ -106,23 +104,26 @@ header .main-head{
 }
 
 @keyframes dropeffect {
-    0%{
+    0% {
         scale: 0;
     }
-    50%{
+
+    50% {
         scale: 0;
     }
-    80%{
+
+    80% {
         scale: 1.3;
     }
-    100%{
+
+    100% {
         scale: 1;
     }
 }
 
 
 
-.banner-slide-nav{
+.banner-slide-nav {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -131,20 +132,21 @@ header .main-head{
     padding: 0 20px;
 }
 
-.banner-slide-nav img{
+.banner-slide-nav img {
     width: 15px;
     filter: grayscale(1);
     cursor: pointer;
 }
 
-.banner-slide-nav img:hover{
+.banner-slide-nav img:hover {
     filter: grayscale(0);
 }
 
-.hero-banner-content span.one{
+.hero-banner-content span.one {
     font-weight: 600;
 }
-.hero-banner-content span.two{
+
+.hero-banner-content span.two {
     font-weight: 600;
     font-size: 25px !important;
 }
@@ -198,6 +200,84 @@ header .main-head{
     color: #369585;
 }
 
+.our-store-wrapper {
+    background: url(../images/Our\ Store-01.png) no-repeat center/cover;
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+
+.our-store-wrapper .connectors {
+    width: 60%;
+    margin: -200px auto 0 auto;
+}
+
+.our-store-wrapper .location p {
+    font-size: 1vw;
+    color: #369585;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.location-1 {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+
+.location-2 {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+}
+.location-3 {
+    position: absolute;
+    top: 65%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    width: 15% !important;
+}
+.location-4 {
+    position: absolute;
+    bottom: -38%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 15% !important;
+}
+.location-5 {
+    position: absolute;
+    bottom: -20%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    width: 15% !important;
+}
+
+.location-6 {
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    width: 15% !important;
+}
+
+.location{
+    width: 10%;
+}
+
+.our-store-wrapper .locator {
+    width: 100%;
+}
+
+.our-store-wrapper .drop-effect {
+    width: 120%;
+    margin-top: -30px;
+    margin-left: -15px;
+}
+
 .our-store-wrapper .subhead h2,
 .brands .subhead h2,
 .gallery .subhead h2,
@@ -241,15 +321,15 @@ header .main-head{
     margin-bottom: 50px;
 }
 
-.ser-wrap{
+.ser-wrap {
     background: #353742;
 }
 
-.lva-wrap{
+.lva-wrap {
     background: linear-gradient(to bottom, #353742 21%, white 10%);
 }
 
-.lva-ser-wrap{
+.lva-ser-wrap {
     background: linear-gradient(to bottom, white 50%, #dad9d9 10%);
 }
 
@@ -327,7 +407,7 @@ header .main-head{
     background: white;
 }
 
-.lva-ser-card:hover{
+.lva-ser-card:hover {
     scale: 0.9;
 }
 
@@ -598,7 +678,7 @@ header .main-head{
     bottom: 5px;
 }
 
-.store-slider-wrap .slick-dots li ,
+.store-slider-wrap .slick-dots li,
 .hero-banner-slider .slick-dots li {
     position: relative;
     display: inline-block;
@@ -612,12 +692,12 @@ header .main-head{
     border-radius: 50%;
 }
 
-.store-slider-wrap .slick-dots li button:before ,
+.store-slider-wrap .slick-dots li button:before,
 .hero-banner-slider .slick-dots li button:before {
     display: none;
 }
 
-.store-slider-wrap li.slick-active ,
+.store-slider-wrap li.slick-active,
 .hero-banner-slider li.slick-active {
     background-color: #369585 !important;
 }
