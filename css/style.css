@@ -234,6 +234,7 @@ header .main-head {}
     right: 25%;
     transform: translate(-50%, -50%);
 }
+
 .location-3 {
     position: absolute;
     top: 63%;
@@ -241,6 +242,7 @@ header .main-head {}
     transform: translate(-50%, -50%);
     width: 15% !important;
 }
+
 .location-4 {
     position: absolute;
     bottom: -38%;
@@ -248,6 +250,7 @@ header .main-head {}
     transform: translate(-50%, -50%);
     width: 15% !important;
 }
+
 .location-5 {
     position: absolute;
     bottom: -20%;
@@ -264,7 +267,7 @@ header .main-head {}
     width: 15% !important;
 }
 
-.location{
+.location {
     width: 10%;
 }
 
@@ -313,6 +316,77 @@ header .main-head {}
     background-color: #369585;
     display: inline-block;
     margin-left: 10px;
+}
+
+.optical-solution .opt-bg {
+    width: 100%;
+}
+
+.optical-solution h2 {
+    width: 90%;
+    margin: 30px auto 0 auto !important;
+    font-weight: 900;
+    font-size: 6vmin;
+    background: linear-gradient(to right, #1DCCC2, #c2eae3, #1DCCC2);
+    padding: 20px 0;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -10px 10px rgb(214, 212, 212);
+}
+
+.optical-solution .opt-right {
+    position: absolute;
+    right: 5%;
+    height: 60%;
+    /* width: 50%; */
+    top: 52%;
+    transform: translateY(-50%);
+}
+
+.opt-list {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.opt-list ul li {
+    width: 75%;
+    height: 65px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 3vmin;
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: #004F4D;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.opt-list ul li:hover{
+    transform: translateX(50px);
+}
+
+.opt-list ul li::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: #004F4D;
+    position: absolute;
+    left: -10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.opt-list ul li span{
+    color: rgb(3, 109, 12);
+    border: 1px solid #1DCCC2;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 
