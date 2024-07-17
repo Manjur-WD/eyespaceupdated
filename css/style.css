@@ -463,7 +463,7 @@ header .main-head {}
 
 .front-trending-slider .item img::after {
     content: "";
-    height: 100%;
+    height: 100px;
     width: 5px;
     background-color: #369585;
     display: inline-block;
