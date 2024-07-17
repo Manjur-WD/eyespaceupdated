@@ -200,6 +200,8 @@ header .main-head {}
     color: #369585;
 }
 
+
+
 .our-store-wrapper {
     background: url(../images/Our\ Store-01.png) no-repeat center/cover;
     height: 100vh;
@@ -281,6 +283,7 @@ header .main-head {}
     margin-left: -15px;
 }
 
+.trending-products .subhead h2,
 .our-store-wrapper .subhead h2,
 .brands .subhead h2,
 .gallery .subhead h2,
@@ -303,6 +306,17 @@ header .main-head {}
     font-family: "Poppins", sans-serif;
 }
 
+.trending-products .subhead h2::before {
+    content: "WEAR THE TRENDS";
+    color: #bbbbbb35;
+    font-weight: 700;
+    position: absolute;
+    font-size: 15vmin;
+    z-index: -1;
+    font-family: "Poppins", sans-serif;
+}
+
+.trending-products .subhead h2::after,
 .our-store-wrapper .subhead h2::after,
 .brands .subhead h2::after,
 .gallery .subhead h2::after,
@@ -368,7 +382,7 @@ header .main-head {}
     transition: all 0.5s ease-in-out;
 }
 
-.opt-list ul li:hover{
+.opt-list ul li:hover {
     transform: translateX(50px);
 }
 
@@ -382,13 +396,81 @@ header .main-head {}
     border-radius: 5px 0 0 5px;
 }
 
-.opt-list ul li span{
+.opt-list ul li span {
     color: rgb(3, 109, 12);
     border: 1px solid #1DCCC2;
-    padding: 5px;
+    padding: 5px 8px;
     border-radius: 50%;
 }
 
+.trending-products {
+    width: 100%;
+    position: relative;
+}
+
+.trending-products .wear-trend .backside-slider {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    border-radius: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.backside-slider .left,
+.backside-slider .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.backside-slider .middle {
+    width: 50%;
+    height: 100%;
+    background-color: #004F4D;
+    border-radius: 50px;
+}
+
+.backside-slider .left .shape,
+.backside-slider .right .shape {
+    width: 100px;
+    height: 100px;
+    background-color: #004F4D;
+    border-radius: 20px;
+}
+
+.front-trending-slider {
+    height: 298px;
+    /* position: relative; */
+    margin: 0 auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.961), rgba(255, 255, 255, 0.915)), url(../images/trends/2150188074.jpg) repeat center/contain;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 82.5%;
+    border-radius: 20px;
+}
+
+.front-trending-slider .item{
+    position: relative;
+}
+
+.front-trending-slider .item img {
+    margin: 0px 150px;
+}
+
+.front-trending-slider .item img::after {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #369585;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    z-index: 99999;
+}
 
 .our-services .lva-desc {
     font-size: 10px;

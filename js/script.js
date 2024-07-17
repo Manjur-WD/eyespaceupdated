@@ -172,3 +172,10 @@ scaleMiddleItem();
 $('.happy-customers-slider').on('afterChange', function (event, slick, currentSlide) {
   scaleMiddleItem();
 });
+
+$('.front-trending-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
