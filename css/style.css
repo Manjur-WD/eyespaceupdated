@@ -428,7 +428,7 @@ header .main-head {}
 .backside-slider .middle {
     width: 50%;
     height: 100%;
-    background-color: #004F4D;
+    background-color: #06cac4;
     border-radius: 50px;
 }
 
@@ -436,7 +436,7 @@ header .main-head {}
 .backside-slider .right .shape {
     width: 100px;
     height: 100px;
-    background-color: #004F4D;
+    background-color: #06aea8;
     border-radius: 20px;
 }
 
@@ -448,28 +448,99 @@ header .main-head {}
     position: absolute;
     top: 67%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 82.5%;
     border-radius: 20px;
 }
 
-.front-trending-slider .item{
+.front-trending-slider .item {
     position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.front-trending-slider .item img {
-    margin: 0px 150px;
-}
-
-.front-trending-slider .item img::after {
-    content: "";
-    height: 100px;
+.front-trending-slider .item .custom-border {
     width: 5px;
-    background-color: #369585;
-    display: inline-block;
+    height: 200px;
+    /* background: linear-gradient(#369585,#1DCCC2); */
+    /* border-radius: 50%; */
+    object-fit: contain;
+}
+
+.category-navigations{
+    margin-top: 100px;
+}
+
+.category-navigations h3{
+    color: #06aea8;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.category-navigations h3::after{
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: #A2A2A2;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.cat-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right,#1DCCC2,#369585);
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.cat-nav::after{
+    content: "";
+    background: white;
+    height: 100px;
+    width: 50px;
+    display: block;
     position: absolute;
-    right: 0;
-    z-index: 99999;
+    left: 14px;
+    
+    animation: shine 1.5s backwards infinite;
+}
+
+@keyframes shine {
+    0%{
+        transform: skew(-45deg)  translateX(0);
+        opacity: 0.5;
+        filter: blur(30px);
+    }
+    100%{
+        transform: skew(-45deg)  translateX(500px);
+        opacity: 0.1;
+        filter: blur(60px);
+    }
+}
+
+.cat-nav:hover{
+    scale: 0.9;
+}
+
+.cat-nav span{
+    color: green;
+    background-color: white;
+    padding: 10px 12px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 
 .our-services .lva-desc {
