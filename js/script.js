@@ -122,10 +122,20 @@ $(".store-slide-nav #next").click(() => {
 })
 
 
+$("#hc-prev").click(() => {
+  $(".slick-prev").click();
+})
+
+$("#hc-next").click(() => {
+  $(".slick-next").click();
+})
+
+
 $('.happy-customers-slider').slick({
   dots: true,
   arrows: true,
   infinite: true,
+  centerMode: true,
   speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -136,7 +146,7 @@ $('.happy-customers-slider').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -144,24 +154,24 @@ $('.happy-customers-slider').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerMode: true
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
+}).on('afterChange', function(event, slick, currentSlide){
+  scaleMiddleItem();
 });
 
-// Custom code to scale up the middle item
 function scaleMiddleItem() {
   $('.happy-customers-slider .slick-slide').removeClass('slick-current-item');
   $('.happy-customers-slider .slick-center').addClass('slick-current-item');
@@ -169,9 +179,6 @@ function scaleMiddleItem() {
 
 scaleMiddleItem();
 
-$('.happy-customers-slider').on('afterChange', function (event, slick, currentSlide) {
-  scaleMiddleItem();
-});
 
 $('.front-trending-slider').slick({
   slidesToShow: 3,

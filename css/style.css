@@ -495,10 +495,10 @@ header .main-head {}
     align-items: center;
     width: 100%;
     background: linear-gradient(to right, #1DCCC2, #369585);
-    padding: 10px 30px;
+    padding: 10px 10px 10px 30px;
     color: white;
     text-decoration: none;
-    border-radius: 40px;
+    border-radius: 32px;
     font-weight: bold;
     line-height: 20px;
     margin-bottom: 20px;
@@ -713,15 +713,93 @@ header .main-head {}
 }
 
 .happy-customer-card {
-    height: 400px;
     background-color: white;
     box-shadow: 0 0 10px gray;
+    margin: 50px 0;
+}
+
+.happy-customer-card {
+    transition: transform 0.2s ease;
+    overflow: hidden;
+}
+
+.hc-right>p {
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.hc-left {
+    position: relative;
+}
+
+.hc-nav button {
+    color: #06cac4;
+    background: none;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+
+.hc-left p {
+    font-weight: bold;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    text-wrap: nowrap;
+    transform: translateX(-50%);
+    background: white;
+    color: #06aea8;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.hc-left>img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hc-right>img {
+    width: 50px;
+    margin: 20px 0;
+}
+
+.hc-right>small {
+    display: block;
+    font-size: 8px;
+    padding-bottom: 20px;
+}
+
+.hc-right>small>i {
+    color: #1DCCC2;
+}
+
+.name-location {
+    margin: 0;
+    color: #06aea8;
+    font-weight: 800;
 }
 
 .slick-current-item {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
+    transform: scale(1.8);
+    z-index: 1;
 }
+
+.happy-customer-card:not(.slick-current-item) {
+    transform: scale(0.7);
+    opacity: 0.5;
+}
+
+.slick-slide {
+    transition: all 0.2s ease;
+}
+
+.happy-customers-slider .slick-center {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
 
 .hc-left {
     background: #369585;
@@ -1204,6 +1282,18 @@ address a i {
     color: #1DCCC2;
 }
 
+.pikaso::after {
+    background: linear-gradient(#06cac3d1, #004f4c7f);
+    content: "";
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 40px;
+    filter: blur(100px);
+}
+
 
 /* RESPOSIVENESS */
 
@@ -1274,21 +1364,21 @@ address a i {
         width: 90%;
     }
 
-    .opt-list ul li:hover{
+    .opt-list ul li:hover {
         transform: translateX(20px);
     }
 
-    .optical-solution{
+    .optical-solution {
         background-color: whitesmoke;
         padding-top: 10px;
         margin-top: 20px;
     }
 
-    .opt-list ul li span{
+    .opt-list ul li span {
         padding: 5px 10px;
     }
 
-    .optical-solution h2{
+    .optical-solution h2 {
         font-size: 18px;
     }
 
@@ -1298,21 +1388,21 @@ address a i {
     .gallery .subhead h2::before,
     .trending-products .subhead h2::before,
     .brands .subhead h2::before,
-    .our-director .subhead h2::before{
+    .our-director .subhead h2::before {
         font-size: 35px;
     }
 
-    .cat-nav{
+    .cat-nav {
         font-size: 10px;
         padding: 5px 10px;
         line-height: 12px;
     }
 
-    .custom-border{
+    .custom-border {
         display: none !important;
     }
 
-    .front-trending-slider{
+    .front-trending-slider {
         height: 295px;
         /* position: relative; */
         margin: 0 auto;
@@ -1325,21 +1415,67 @@ address a i {
         border-radius: 20px;
     }
 
-    .ser-wrap > p{
+    .ser-wrap>p {
         width: 90% !important;
         color: white;
     }
 
-    .lva-card:hover{
-scale: 0.9;
+    .lva-card:hover {
+        scale: 0.9;
     }
 
-    .lva-ser-wrap .row{
+    .lva-ser-wrap .row {
         gap: 35px;
     }
 
-    .subhead{
+    .subhead {
         padding-bottom: 20px !important;
     }
-    
+
+    .pikaso img {
+        margin-left: 0 !important;
+    }
+
+    .shooter-lens h2 {
+        font-size: 12px;
+    }
+
+    .shooter-lens h3 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .hc-right {
+        padding: 20px;
+    }
+
+    .hc-nav {
+        margin-bottom: 30px;
+    }
+
+    .director-card:hover {
+        margin: 15px;
+        scale: 0.8;
+    }
+
+    .map-navigation {
+        margin-top: 200px;
+    }
+
+    .our-store-wrapper {
+        height: 500px;
+    }
+
+    .see-store {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        text-wrap: nowrap;
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, aqua, darkorchid) border-box;
+        border-radius: 50em;
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+    }
+
 }
