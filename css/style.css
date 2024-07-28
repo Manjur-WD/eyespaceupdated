@@ -204,7 +204,7 @@ header .main-head {}
 
 .our-store-wrapper {
     background: url(../images/Our\ Store-01.png) no-repeat center/cover;
-    height: 100vh;
+    height: 110vh;
     width: 95%;
     margin: auto;
     border-radius: 50px;
@@ -301,7 +301,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    left: 10px;
+    font-size: 12vmin;
     z-index: -1;
     font-family: "Poppins", sans-serif;
 }
@@ -311,7 +312,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    left: 10px;
+    font-size: 12vmin;
     z-index: -1;
     font-family: "Poppins", sans-serif;
 }
@@ -352,7 +354,7 @@ header .main-head {}
     right: 5%;
     height: 60%;
     /* width: 50%; */
-    top: 52%;
+    top: 25%;
     transform: translateY(-50%);
 }
 
@@ -415,6 +417,10 @@ header .main-head {}
     border-radius: 20%;
     display: flex;
     justify-content: space-between;
+}
+
+.wear-trend .slick-slide  img{
+    transform: translateY(-12%);
 }
 
 .backside-slider .left,
@@ -606,6 +612,7 @@ header .main-head {}
 }
 
 .lva-short-desc {
+    color: white;
     font-weight: 700;
 }
 
@@ -697,7 +704,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    left: 10px;
+    font-size: 12vmin;
     z-index: -1;
     font-family: "Poppins", sans-serif;
 }
@@ -707,7 +715,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    left: 10px;
+    font-size: 12vmin;
     z-index: -1;
     font-family: "Poppins", sans-serif;
 }
@@ -781,25 +790,24 @@ header .main-head {}
     font-weight: 800;
 }
 
-.slick-current-item {
-    transform: scale(1.8);
-    z-index: 1;
+.happy-customers .swiper-slide-next{
+    scale: 1.2;
+    opacity: 1;
 }
 
-.happy-customer-card:not(.slick-current-item) {
-    transform: scale(0.7);
+@media(max-width: 600px){
+.swiper-slide{
+    scale: 1 !important;
+    opacity: 1 !important;
+    padding: 20px;
+}
+}
+
+.swiper-slide{
+    scale: 0.8;
+    transition: all 0.5s ease-in-out;
     opacity: 0.5;
 }
-
-.slick-slide {
-    transition: all 0.2s ease;
-}
-
-.happy-customers-slider .slick-center {
-    transform: scale(1.2);
-    z-index: 1;
-}
-
 
 .hc-left {
     background: #369585;
@@ -811,7 +819,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    font-size: 12vmin;
+    left: 10px;
     z-index: -1;
     font-family: "Poppins", sans-serif;
 }
@@ -836,10 +845,10 @@ header .main-head {}
 .director-card p {
     background: white;
     color: #369585;
-    font-size: 5vmin;
+    font-size: 32px;
     text-align: center;
     font-weight: 900;
-    line-height: 35px;
+    line-height: 40px;
     padding: 20px 0;
     margin: 0;
 }
@@ -932,7 +941,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    left: 10px;
+    font-size: 12vmin;
     z-index: -1;
     font-family: "Poppins", sans-serif;
 }
@@ -967,7 +977,7 @@ header .main-head {}
     font-size: 5vmin;
     text-align: center;
     font-weight: 900;
-    line-height: 35px;
+    line-height: 50px;
     padding: 20px 0 0 0;
 }
 
@@ -1086,7 +1096,7 @@ header .main-head {}
     text-align: center;
     font-weight: 900;
     border-radius: 0 0 10px 10px;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .franchise-card a,
@@ -1176,7 +1186,8 @@ header .main-head {}
     color: #bbbbbb35;
     font-weight: 700;
     position: absolute;
-    font-size: 15vmin;
+    left: 10px;
+    font-size: 12vmin;
     z-index: -1;
 }
 
