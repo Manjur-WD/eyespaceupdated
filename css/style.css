@@ -1507,7 +1507,7 @@ address a i {
 
 .hero-stall .head {
     color: #06aea8;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -1537,8 +1537,8 @@ address a i {
 }
 
 .some-counts .item {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     background-color: #369585;
     display: flex;
     justify-content: center;
@@ -1555,15 +1555,15 @@ address a i {
 }
 
 .some-counts .item p {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 800;
     color: white;
-    line-height: 32px;
+    line-height: 25px;
     margin-bottom: 0;
 }
 
 .some-counts .item p span {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 0px;
     font-weight: 500;
 }
@@ -1617,20 +1617,24 @@ address a i {
     margin-bottom: 30px;
 }
 
-.aids-card{
+.aids-card {
     height: 100%;
     transition: all 0.5s ease-in-out;
-    padding: 20px;
+    padding: 10px;
 }
 
-.aids-card:hover{
+.aids-card p {
+    font-size: 12px !important;
+}
+
+.aids-card:hover {
     border: 1px solid #06cac4;
     border-radius: 20px;
     scale: 0.9;
     box-shadow: 2px 2px 10px #A2A2A2;
 }
 
-.partners h2 ,
+.partners h2,
 .why-partners h2 {
     text-align: center;
     font-size: 40px;
@@ -1661,34 +1665,108 @@ address a i {
     transform: translateX(-50%);
 }
 
-.partners h2 span ,
+.partners h2 span,
 .why-partners h2 span {
     color: #06aea8;
 }
 
-.why-partners .listing-num{
-border: 1px solid #06cac4;
-height: 35px;
-width: 35px;
-text-align: center;
-padding-top: 5px;
-display: inline-block;
-border-radius: 50%;
-font-size: 20px;
-margin-right: 10px;
+.why-partners .listing-num {
+    border: 1px solid #06cac4;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding-top: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
-.why-partners .list-sub{
+.why-partners .list-sub {
     color: #06cac4;
 }
 
-.why-partners h3{
+.why-partners h3 {
     font-size: 30px;
     font-weight: 800;
 }
 
-.why-partners p span{
+.why-partners p span {
     color: #06aea8;
     font-size: 22px;
     font-weight: 600;
+}
+
+.callback {
+    background-color: #06aea8;
+    padding: 40px 0;
+}
+
+.callback p {
+    line-height: 30px;
+}
+
+.call-us {
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #06aea8;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.call-us:hover {
+    scale: 0.9;
+}
+
+/* Responsive */
+
+@media(max-width: 600px) {
+
+    .hero-stall .head,
+    .partners h2,
+    .why-partners h2,
+    .why-partners h3 {
+        font-size: 20px;
+    }
+
+    .schedule-call {
+        font-size: 20px;
+    }
+
+    .low-vision-aids h2 {
+        font-size: 25px;
+    }
+
+    .low-vision-aids>p {
+        width: 100% !important;
+    }
+
+    .low-vision-aids h4 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .partners h2::after {
+        content: "";
+        background-color: #A2A2A2;
+        height: 2px;
+        width: 200px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 9%;
+        transform: translateX(-50%)
+    }
+
+    .why-partners h2::after {
+        top: 2%;
+        width: 200px;
+    }
+
+    .callback p{
+        font-size: 15px !important;
+    }
 }
