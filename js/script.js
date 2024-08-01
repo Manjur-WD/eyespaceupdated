@@ -1,3 +1,17 @@
+$(document).ready(function() {
+  var videoId = 'mApUfvbyCLQ'; // Replace with your video ID
+  var videoUrl = 'https://www.youtube.com/embed/' + videoId;
+
+  $('#videoModal').on('show.bs.modal', function () {
+      $('#video-iframe').attr('src', videoUrl);
+  });
+
+  $('#videoModal').on('hide.bs.modal', function () {
+      $('#video-iframe').attr('src', ''); // Stop video playback
+  });
+});
+
+
 
 var swiper = new Swiper(".happy-customers-slider", {
   slidesPerView: 3,
