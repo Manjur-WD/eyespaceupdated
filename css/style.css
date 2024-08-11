@@ -7,6 +7,10 @@ body {
     overflow-x: hidden;
 }
 
+.bg-warning{
+background-color: #b7fffb !important;
+}
+
 .font-pop {
     font-family: "Poppins", sans-serif;
 }
@@ -198,6 +202,19 @@ header .main-head {}
 
 .main-head hr {
     color: #369585;
+    margin: 5px;
+}
+
+#content-section h5{
+    font-weight: 800;
+    color: #06cac4;
+}
+
+#back-button{
+    background: #369585;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 30px;
 }
 
 
@@ -560,7 +577,7 @@ header .main-head {}
 }
 
 .lva-wrap {
-    background: linear-gradient(to bottom, #353742 21%, white 10%);
+    background: white;
 }
 
 .lva-ser-wrap {
@@ -1090,13 +1107,13 @@ header .main-head {}
     background-color: white;
     width: 100%;
     margin: 0;
-    font-size: 6vmin;
+    font-size: 3vmin;
     color: #369585;
-    padding: 40px 30px;
+    padding: 20px 12px 45px 12px;
     text-align: center;
     font-weight: 900;
     border-radius: 0 0 10px 10px;
-    line-height: 50px;
+    line-height: 28px;
 }
 
 .franchise-card a,
@@ -1341,7 +1358,7 @@ address a i {
     .navbar-toggler {
         position: absolute;
         right: 15px;
-        top: -50px;
+        top: -65px;
     }
 
     .middle-head>div>a>img {
