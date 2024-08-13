@@ -648,6 +648,10 @@ header .main-head {}
     max-width: 80%;
 }
 
+.overlay-content p{
+    font-size: 10px;
+}
+
 /* Close button styling */
 .close-overlay {
     background-color: #007bff;
