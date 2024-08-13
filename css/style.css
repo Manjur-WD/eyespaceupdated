@@ -221,7 +221,6 @@ header .main-head {}
 
 .our-store-wrapper {
     background: url(../images/Our\ Store-01.png) no-repeat center/cover;
-    height: 110vh;
     width: 95%;
     margin: auto;
     border-radius: 50px;
@@ -1486,14 +1485,18 @@ address a i {
         scale: 0.8;
     }
 
-    .map-navigation {
+    /* .map-navigation {
         margin-top: 200px;
-    }
+    } */
 
     .our-store-wrapper {
-        height: 500px;
+        height: auto;
     }
 
+    .our-store-wrapper svg{
+        width: 150%;
+        transform: translateX(-15%);
+    }
     .see-store {
         display: inline-block;
         text-decoration: none;
@@ -1787,3 +1790,46 @@ address a i {
         font-size: 15px !important;
     }
 }
+
+/* Base styles for the paths */
+#Group_23:hover,
+#Group_7:hover,
+#Group_11:hover,
+#Group_35:hover,
+#Group_27:hover,
+#Group_31:hover,
+#Group_15:hover,
+#Group_19:hover {
+    animation: drop 1s infinite;
+}
+
+/* Define the animation */
+@keyframes drop {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Smooth the animation */
+@keyframes drop {
+    0% {
+        transform: translateY(0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translateY(-25px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+  
